@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* デフォルトでついている余白削除 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    /* グラデーション */
+    background: linear-gradient(rgb(42, 98, 176),rgb(6, 4, 72));
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 100px;
+    color: rgb(228, 218, 218);
+}
+
+.container {
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-title {
+    font-size: 4rem;
+    margin-bottom: 50px;
+}
+
+.content {
+    /* position: relative; */
+    width: 1150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content .image0 {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.content .image0 img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    z-index: 10;
+}
+
+.content .text-box {
+    z-index: 20;
+    background: rgba(255, 255, 255, 0.1);
+    /* ガウシアンぼかし */
+    backdrop-filter: blur(20px);
+    padding: 40px;
+    max-width: 400px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    transform: translate(-80px, 50px);
+}
+
+.content .text-box h3 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.media-icons {
+    margin-top: 100px;
+}
+
+.media-icons a {
+    color: #fff;
+    font-size: 2em;
+    margin: 60px;
+}
+
+/*section02*/
+
+.section-title {
+    font-size: 3rem;
+    margin-bottom: 80px;
+}
+
+.info-title {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.info {
+    width: 700px;
+    margin-left: 50px;
+}
+.content .image1 {
+    position: relative;
+    width: 600px;
+    height: 800px;
+    overflow: hidden;
+}
+
+.content .image1 img {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    zoom: 500%;
+    /* object-fit: none; */
+    object-position: 0 10%;
+    object-fit: cover;
+    border-radius: 2px;
+    z-index: 10;
+}
+
+/* section3 */
+
+.media-info {
+    width: 400px;
+    margin-left: 50px;
+}
+
+.media-info li {
+    list-style: none;
+    font-size: 1.4em;
+}
+
+.media-info li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Linkedinだけスタイルに適用しない */
+.media-info li:not(:last-child) {
+    margin-bottom: 50px;    
+}
+
+/* nth-child()...()内で指定したものにのみ適用する疑似クラス */
+.media-info li:nth-child(1),
+.media-info li:nth-child(5) {
+    padding-left: 100px;
+}
+
+.media-info li:nth-child(2),
+.media-info li:nth-child(4) {
+    padding-left: 50px;
+}
+
+.sec-03 {
+    margin-bottom: 100px;
+}
+
+.content .image2 {
+    position: relative;
+    width: 600px;
+    height: 500px;
+    overflow: hidden;
+}
+
+.content .image2 img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    z-index: 10;
+}
