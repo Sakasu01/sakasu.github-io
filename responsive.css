@@ -45,7 +45,7 @@ section {
 .content .image0 {
     position: relative;
     margin-left: 20vw;
-    width: 70vw;
+    width: 100vw;
     height: 60vh;
     overflow: hidden;
 }
@@ -75,7 +75,7 @@ section {
 
 .content .text-box h3 {
     font-size: 2em;
-    margin-bottom: 10px;
+    margin-bottom: 2vh;
 }
 
 .media-icons {
