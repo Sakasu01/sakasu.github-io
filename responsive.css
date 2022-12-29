@@ -165,16 +165,16 @@ section {
 .content .image2 {
     position: relative;
     width: 70vw;
-    height: 50vh;
+    height: 60vh;
     overflow: hidden;
-    margin-left: 0vw;
+    margin-left: -15vw;
 }
 
 .content .image2 img {
     position: absolute;
     top: 0vw;
-    left: 0;
-    width: 45vw;
+    left: 0vw;
+    width: 40vw;
     height: 50vh;
     object-fit: cover;
     border-radius: 10px;
