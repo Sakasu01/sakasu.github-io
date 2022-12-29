@@ -128,6 +128,7 @@ section {
     position: relative;
     width: 10vw;
     margin-left: -10vh;
+    margin-top: -10vh;
 }
 
 .media-info li {
@@ -170,7 +171,7 @@ section {
     height: 70vh;
     overflow: hidden;
     margin-left: 50vw;
-    margin-top: 20vh;
+    margin-top: 0vh;
 }
 
 .content .image2 img {
