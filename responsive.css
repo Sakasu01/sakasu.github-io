@@ -12,6 +12,8 @@ body {
     /* グラデーション */
     background: linear-gradient(rgb(64, 119, 186),rgb(4, 16, 72));
     overflow-x: hidden;
+    justify-content: center;
+    align-items: center;
 }
 
 section {
