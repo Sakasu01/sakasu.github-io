@@ -10,7 +10,7 @@
 
 body {
     /* グラデーション */
-    background: linear-gradient(rgb(42, 98, 176),rgb(4, 72, 21));
+    background: linear-gradient(rgb(160, 167, 176),rgb(4, 72, 21));
 }
 
 section {
@@ -18,7 +18,7 @@ section {
     justify-content: center;
     align-items: center;
     padding: 80px 100px;
-    color: rgb(228, 218, 218);
+    color: rgb(10, 4, 85);
 }
 
 .container {
