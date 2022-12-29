@@ -36,7 +36,7 @@ section {
 
 .content {
     /* position: relative; */
-    width: 150vw;
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,8 +44,8 @@ section {
 
 .content .image0 {
     position: relative;
-    margin-left: 20vw;
-    width: 100vw;
+    margin-left: 1vw;
+    width: 60vw;
     height: 60vh;
     overflow: hidden;
 }
@@ -67,10 +67,10 @@ section {
     /* ガウシアンぼかし */
     backdrop-filter: blur(20px);
     padding: 5vw;
-    max-width: 70vw;
+    max-width: 60vw;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 10px;
-    transform: translate(-80vw, 50vh);
+    transform: translate(-10vw, 5vh);
 }
 
 .content .text-box h3 {
