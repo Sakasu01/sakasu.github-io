@@ -106,8 +106,8 @@ section {
 }
 .content .image1 {
     position: relative;
-    width: 50vw;
-    height: 85vh;
+    width: 40vw;
+    height: 60vh;
     overflow: hidden;
 }
 
@@ -140,22 +140,22 @@ section {
 
 /* Linkedinだけスタイルに適用しない */
 .media-info li:not(:last-child) {
-    margin-bottom: 40px;    
+    margin-bottom: 5vw;    
 }
 
 /* nth-child()...()内で指定したものにのみ適用する疑似クラス */
 .media-info li:nth-child(1),
 .media-info li:nth-child(5) {
-    padding-left: 15vw;
+    padding-left: 30vw;
 }
 
 .media-info li:nth-child(3) {
-    padding-left: 0.5vw;
+    padding-left: 20vw;
 }
 
 .media-info li:nth-child(2),
 .media-info li:nth-child(4) {
-    padding-left: 5vw;
+    padding-left: 25vw;
 }
 
 .sec-03 {
@@ -174,7 +174,7 @@ section {
     position: absolute;
     top: 0vw;
     left: 0;
-    width: 50vw;
+    width: 45vw;
     height: 50vh;
     object-fit: cover;
     border-radius: 10px;
