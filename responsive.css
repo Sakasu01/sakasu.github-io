@@ -135,7 +135,7 @@ section {
 
 .media-info li {
     list-style: none;
-    font-size: 1.4em;
+    font-size: 1.2em;
 }
 
 .media-info li a {
@@ -155,12 +155,12 @@ section {
 }
 
 .media-info li:nth-child(3) {
-    padding-left: 20vw;
+    padding-left: 15vw;
 }
 
 .media-info li:nth-child(2),
 .media-info li:nth-child(4) {
-    padding-left: 25vw;
+    padding-left: 27.5vw;
 }
 
 .sec-03 {
