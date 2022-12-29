@@ -149,12 +149,12 @@ section {
 /* nth-child()...()内で指定したものにのみ適用する疑似クラス */
 .media-info li:nth-child(1),
 .media-info li:nth-child(5) {
-    padding-left: 100px;
+    padding-left: 80px;
 }
 
 .media-info li:nth-child(2),
 .media-info li:nth-child(4) {
-    padding-left: 50px;
+    padding-left: 100px;
 }
 
 .sec-03 {
