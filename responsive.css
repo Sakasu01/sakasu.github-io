@@ -101,9 +101,10 @@ section {
 }
 
 .info {
-    width: 300px;
-    margin-left: 50px;
+    width: 30vw;
+    margin-left: 0vw;
 }
+
 .content .image1 {
     position: relative;
     width: 50vw;
@@ -124,8 +125,9 @@ section {
 /* section3 */
 
 .media-info {
-    width: 400px;
-    margin-left: 50px;
+    position: relative;
+    width: 10vw;
+    margin-left: -10vh;
 }
 
 .media-info li {
@@ -159,15 +161,16 @@ section {
 }
 
 .sec-03 {
-    margin-bottom: 10vh;
+    margin-bottom: 100vh;
 }
 
 .content .image2 {
     position: relative;
-    width: 70vw;
-    height: 60vh;
+    width: 40vw;
+    height: 70vh;
     overflow: hidden;
-    margin-left: -15vw;
+    margin-left: 50vw;
+    margin-top: 20vh;
 }
 
 .content .image2 img {
