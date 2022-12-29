@@ -66,11 +66,11 @@ section {
     background: rgba(255, 255, 255, 0.1);
     /* ガウシアンぼかし */
     backdrop-filter: blur(20px);
-    padding: 40px;
-    max-width: 300px;
+    padding: 5vw;
+    max-width: 70vw;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 10px;
-    transform: translate(-80px, 50px);
+    transform: translate(-80vw, 50vh);
 }
 
 .content .text-box h3 {
