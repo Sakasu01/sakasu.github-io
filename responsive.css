@@ -82,20 +82,21 @@ section {
 }
 
 .media-icons {
-    margin-top: 100px;
+    margin-top: 5vh;
+    margin-bottom: 20vh;
 }
 
 .media-icons a {
     color: #fff;
     font-size: 2em;
-    margin: 20px;
+    margin: 7vw;
 }
 
 /*section02*/
 
 .section-title {
     font-size: 3rem;
-    margin-bottom: 80px;
+    margin-bottom: 10vh;
 }
 
 .info-title {
