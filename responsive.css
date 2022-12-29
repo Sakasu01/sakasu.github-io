@@ -31,12 +31,12 @@ section {
 
 .main-title {
     font-size: 3rem;
-    margin-bottom: 50px;
+    margin-bottom: 15vh;
 }
 
 .content {
     /* position: relative; */
-    width: 720px;
+    width: 150vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,7 +44,7 @@ section {
 
 .content .image0 {
     position: relative;
-    margin-left: 100px;
+    margin-left: 20vw;
     width: 700px;
     height: 300px;
     overflow: hidden;
