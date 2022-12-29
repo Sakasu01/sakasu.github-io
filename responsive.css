@@ -130,7 +130,7 @@ section {
     position: relative;
     width: 10vw;
     margin-left: -10vh;
-    margin-top: -10vh;
+    margin-top: -20vh;
 }
 
 .media-info li {
@@ -160,7 +160,7 @@ section {
 
 .media-info li:nth-child(2),
 .media-info li:nth-child(4) {
-    padding-left: 27.5vw;
+    padding-left: 22.5vw;
 }
 
 .sec-03 {
