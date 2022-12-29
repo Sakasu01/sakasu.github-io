@@ -5,8 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sakasu's Note</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="responsive.css" media="screen and (max-width: 720px)">
+    <script>
+        var windowWidth = $(window).width();
+        var windowSm = 720;
+        if (windowWidth <= windowSm) {
+            <link rel="stylesheet" href="responsive.css"/>
+        } else {
+            <link rel="stylesheet" href="style.css"/>
+        }
+    </script>
+   
     <link
         rel="stylesheet"
         href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
