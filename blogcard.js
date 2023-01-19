@@ -1,9 +1,3 @@
-<header>
-    <h1>ヘッダー</h1>
-    <a href="./index.html">リンク</a>
-</header>
-
-<header>
 function show_blogcard($atts) {
     extract(shortcode_atts(array(
         'url'=>"",
@@ -55,7 +49,4 @@ function show_blogcard($atts) {
     </a>
     </div>';    
     return $sc_blogcard;    
-    // ショートコードに追加
-    // add_shortcode("sc_blogcard", "show_blogcard");
 }
-</header>
