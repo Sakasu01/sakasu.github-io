@@ -1,0 +1,45 @@
+@use '../../base/nav/nav';
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+
+/* デフォルトでついている余白削除 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: #fffdfa;
+}
+
+.prettyprint {
+    color: #fffdfa;
+    margin-left: 100vw;
+}
+
+body {
+    background: #2f2a20;
+    height:100%;
+    width:100%;
+    margin-left: 1vw;
+}
+
+code {
+    font-family: Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+    font-size: 14px;
+    overflow: auto;
+    resize: horizontal;
+    color: #fffdfa;
+}
+
+em {
+    font-style: norma;
+    margin-left: -16px;
+    margin-right: -16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    background-color: #424242;
+    display: inline-block;
+    width: 100%;
+    color: #fffdfa;
+}
+

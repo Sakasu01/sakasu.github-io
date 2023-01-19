@@ -1,0 +1,197 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/*========= ナビゲーションのためのCSS ===============*/
+#g-nav {
+  /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
+  position: fixed;
+  z-index: 999;
+  /*ナビのスタート位置と形状*/
+  top: 0;
+  right: -120%;
+  width: 100%;
+  height: 100vh; /*ナビの高さ*/
+  background: rgb(12, 16, 14);
+  /*動き*/
+  transition: all 0.6s;
+  opacity: 0.95;
+}
+
+/*アクティブクラスがついたら位置を0に*/
+#g-nav.panelactive {
+  right: 0;
+}
+
+/*ナビゲーションの縦スクロール*/
+#g-nav.panelactive #g-nav-list {
+  /*ナビの数が増えた場合縦スクロール*/
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100vh; /*表示する高さ*/
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/*ナビゲーション*/
+#g-nav ul {
+  /*ナビゲーション天地中央揃え*/
+  position: absolute;
+  z-index: 999;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*リストのレイアウト設定*/
+#g-nav li {
+  list-style: none;
+  text-align: center;
+}
+
+#g-nav li a {
+  color: rgb(155, 176, 21);
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+}
+
+/*========= ボタンのためのCSS ===============*/
+.openbtn1 {
+  position: fixed;
+  z-index: 9999; /*ボタンを最前面に*/
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+}
+
+/*×に変化*/
+.openbtn1 span {
+  display: inline-block;
+  transition: all 0.4s;
+  position: absolute;
+  left: 14px;
+  height: 3px;
+  border-radius: 2px;
+  background-color: rgb(251, 251, 251);
+  width: 45%;
+}
+
+.openbtn1 span:nth-of-type(1) {
+  top: 15px;
+}
+
+.openbtn1 span:nth-of-type(2) {
+  top: 23px;
+}
+
+.openbtn1 span:nth-of-type(3) {
+  top: 31px;
+}
+
+.openbtn1.active span:nth-of-type(1) {
+  top: 18px;
+  left: 18px;
+  transform: translateY(6px) rotate(-45deg);
+  width: 30%;
+}
+
+.openbtn1.active span:nth-of-type(2) {
+  opacity: 0;
+}
+
+.openbtn1.active span:nth-of-type(3) {
+  top: 30px;
+  left: 18px;
+  transform: translateY(-6px) rotate(45deg);
+  width: 30%;
+}
+
+/* デフォルトでついている余白削除 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: #fffdfa;
+}
+
+body {
+  background: #2f2a20;
+  height: 100%;
+  width: 100%;
+  margin-left: 1vw;
+}
+
+h1 {
+  padding-top: 1rem;
+  font-size: 2.5em;
+  line-height: 1.2em;
+  text-align: center;
+}
+
+h1 .subtitle {
+  font-size: 0.7em;
+  font-weight: normal;
+}
+
+h1::before {
+  content: "";
+  width: 56px;
+  height: 1px;
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  bottom: -30px;
+  background-color: rgb(255, 255, 255);
+}
+
+/*ソースコード表示*/
+.code {
+  position: relative;
+  margin-left: 0px;
+  padding: 30px 0 10px 20px; /*余白：上・右・下・左*/
+  border-left: solid 10px #8fd2ed; /*左ラインの色・幅*/
+  background: #2F3437; /*背景色*/
+  color: #fff; /*文字色*/
+  font-size: 1em; /*文字サイズ*/
+  overflow: auto;
+}
+
+/*コピー可に*/
+pre code {
+  user-select: all !important;
+  -moz-user-select: all !important;
+  -webkit-user-select: all !important;
+  -khtml-user-select: all !important;
+}
+
+.code:after { /*ラベルの設定*/
+  content: "CODE"; /*ラベルに表示する文字*/
+  background: #969998; /*背景色*/
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  padding: 5px 10px;
+  line-height: 1;
+  font-size: 0.9em;
+  color: #fff;
+}
+
+em {
+  font-style: norma;
+  margin-left: -16px;
+  margin-right: -16px;
+  padding-left: 16px;
+  padding-right: 16px;
+  background-color: #424242;
+  display: inline-block;
+  width: 100%;
+  color: #fffdfa;
+}
+/*# sourceMappingURL=programming.css.map */
