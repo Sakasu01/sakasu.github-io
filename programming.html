@@ -12,6 +12,7 @@
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
         crossorigin="anonymous"
     />
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 </head>
 
 <body>
@@ -51,6 +52,17 @@
     <h2>まとめ</h2>
     そのうちちゃんと更新します。
     <br>
+
+    <script src="include.js"></script>
+    <script src=”https://code.jquery.com/jquery-3.5.1.js”></script>
+    <script>blogcard();</script>
+    <script>
+        $(function(){
+            $("#blogcard").load("blogcard.html");
+        });
+    </script>
+    
+   
     AtCoder: https://atcoder.jp/home
 </section>
   
@@ -77,8 +89,8 @@
 <script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/5-1-14/js/5-1-14.js"></script>
 
 <script>
-$(".openbtn1").click(function () {//ボタンがクリックされたら
-    $(this).toggleClass('active');//ボタン自身に activeクラスを付与し
+    $(".openbtn1").click(function () {//ボタンがクリックされたら
+        $(this).toggleClass('active');//ボタン自身に activeクラスを付与し
         $("#g-nav").toggleClass('panelactive');//ナビゲーションにpanelactiveクラスを付与
     });
     
@@ -86,6 +98,8 @@ $(".openbtn1").click(function () {//ボタンがクリックされたら
         $(".openbtn1").removeClass('active');//ボタンの activeクラスを除去し
         $("#g-nav").removeClass('panelactive');//ナビゲーションのpanelactiveクラスも除去
     });
+
+    
 </script>
 </body>
 </html>
