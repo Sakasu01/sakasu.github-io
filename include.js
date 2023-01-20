@@ -1,8 +1,9 @@
-@mixin function include(site){
+function include(target){
+    console.log(target);
     $.ajax({
-        url: site+'.html', // リクエストを送信するURLを指定
+        url: target+'.html', // リクエストを送信するURLを指定
         async: false, // 非同期リクエストを無効にする
-    }).done(function(site_html){ // 通信が成功したら
-        document.write(site_html); // herder.htmlを表示する
+    }).done(function(target_html){ // 通信が成功したら
+        document.write(target_html); // herder.htmlを表示する
     });
 }
