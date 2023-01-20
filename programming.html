@@ -37,10 +37,59 @@
     <br>
     <pre class="code"><code>
       
-        ここにコード
-        .elem {
-            font-size: 16px;
-        }
+            # include <iostream>
+            # include <vector>
+            # include <unordered_map>
+            # include <string>
+            using namespace std;
+             
+            unordered_map<string, bool> memo;
+            unordered_map<string, vector<string>> graph;
+             
+            // dfs(start) # => start から出発して閉路があるなら `true` を返す
+            bool dfs(string s, unordered_map<string, bool>& visited) {
+              memo[s] = true;
+              if (visited[s]) return true;
+              bool closed = false;
+              visited[s] = true;
+              for (string t : graph[s]) {
+                if (dfs(t, visited)) closed = true;
+              }
+              visited[s] = false;
+              return closed;
+            }
+             
+            int main() {
+              int n;
+              cin >> n;
+              vector<string> s(n), t(n);
+              for (int i = 0; i < n; i++) {
+                cin >> s[i] >> t[i];
+                graph[s[i]].push_back(t[i]);
+              }
+             
+              unordered_map<string, bool> visited;
+              for (int i = 0; i < n; i++) {
+                if (memo[s[i]]) continue;
+                string start = s[i];
+                bool closed = dfs(start, visited);
+                if (closed) {
+                  cout << "No" << endl;
+                  return 0;
+                }
+              }
+              for (int i = 0; i < n; i++) {
+                if (memo[t[i]]) continue;
+                string start = t[i];
+                bool closed = dfs(start, visited);
+                if (closed) {
+                  cout << "No" << endl;
+                  return 0;
+                }
+              }
+             
+              cout << "Yes" << endl;
+            }
         <em>
             うおおおおおc++++++++
         </em>
