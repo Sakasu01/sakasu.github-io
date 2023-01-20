@@ -107,13 +107,15 @@ section {
 
 .info {
     width: 30vw;
-    margin-left: 2vw;
+    margin-left: 0vw;
+    margin-right: 20vw;
 }
 
 .content .image1 {
     position: relative;
     width: 50vw;
     height: 60vh;
+    margin-left: 30vw;
     overflow: hidden;
 }
 
