@@ -11,14 +11,17 @@
 body {
     /* グラデーション */
     background: linear-gradient(rgb(42, 98, 176),rgb(6, 4, 72));
+    height:100%;
+    width:100%;
+    margin-left: 1vw;
 }
 
 section {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 80px 100px;
-    color: rgb(228, 218, 218);
+    padding:1vw 1vh;
+    color: rgb(255, 255, 255);
 }
 
 .container {
@@ -30,13 +33,14 @@ section {
 }
 
 .main-title {
-    font-size: 4rem;
-    margin-bottom: 50px;
+    font-size: 3rem;
+    margin-top: 5vh;
+    margin-bottom: 15vh;
 }
 
 .content {
     /* position: relative; */
-    width: 1150px;
+    /* width: 100vw; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,8 +49,8 @@ section {
 .content .image0 {
     position: relative;
     margin-left: 5vw;
-    width: 600px;
-    height: 400px;
+    width: 70vw;
+    height: 60vh;
     overflow: hidden;
 }
 
@@ -55,7 +59,7 @@ section {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 80%;
     object-fit: cover;
     border-radius: 10px;
     z-index: 10;
@@ -66,33 +70,34 @@ section {
     background: rgba(255, 255, 255, 0.1);
     /* ガウシアンぼかし */
     backdrop-filter: blur(20px);
-    padding: 40px;
-    max-width: 400px;
+    padding: 3vw;
+    max-width: 60vw;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 10px;
-    transform: translate(-80px, 50px);
+    transform: translate(-5vw, 5vh);
 }
 
 .content .text-box h3 {
     font-size: 2em;
-    margin-bottom: 10px;
+    margin-bottom: 2vh;
 }
 
 .media-icons {
-    margin-top: 100px;
+    margin-top: 5vh;
+    margin-bottom: 20vh;
 }
 
 .media-icons a {
     color: #fff;
     font-size: 2em;
-    margin: 60px;
+    margin: 7vw;
 }
 
 /*section02*/
 
 .section-title {
     font-size: 3rem;
-    margin-bottom: 80px;
+    margin-bottom: 10vh;
 }
 
 .info-title {
@@ -101,43 +106,39 @@ section {
 }
 
 .info {
-    width: 700px;
-    margin-left: 50px;
+    width: 30vw;
+    margin-left: 2vw;
 }
+
 .content .image1 {
-    /* 親要素が基準であることを示すrelative */
-    position: relative; 
-    margin-left: 5vw;
-    width: 600px;
-    height: 800px;
+    position: relative;
+    width: 50vw;
+    height: 60vh;
     overflow: hidden;
 }
 
 .content .image1 img {
-    /* 親要素を基準とした子要素を示すabsolute */
     position: absolute;
-    top: 10px;
-    left: 2vw;
-    width: 100px;
-    height: 100px;
-    zoom: 500%;
-    /* object-fit: none; */
-    object-position: 0 10%;
+    top: 0;
+    left: 0;
+    /* width: 100%;
+    height: 80%; */
     object-fit: cover;
-    border-radius: 2px;
+    border-radius: 10px;
     z-index: 10;
 }
-
 /* section3 */
 
 .media-info {
-    width: 400px;
-    margin-left: 50px;
+    position: relative;
+    width: 10vw;
+    margin-left: -10vh;
+    margin-top: -20vh;
 }
 
 .media-info li {
     list-style: none;
-    font-size: 1.4em;
+    font-size: 1.0em;
 }
 
 .media-info li a {
@@ -147,95 +148,50 @@ section {
 
 /* Linkedinだけスタイルに適用しない */
 .media-info li:not(:last-child) {
-    margin-bottom: 50px;    
+    margin-bottom: 5vw;    
 }
 
 /* nth-child()...()内で指定したものにのみ適用する疑似クラス */
 .media-info li:nth-child(1),
 .media-info li:nth-child(5) {
-    padding-left: 100px;
+    padding-left: 30vw;
+}
+
+.media-info li:nth-child(3) {
+    padding-left: 17vw;
 }
 
 .media-info li:nth-child(2),
 .media-info li:nth-child(4) {
-    padding-left: 50px;
+    padding-left: 22.5vw;
 }
 
 .sec-03 {
-    margin-bottom: 100px;
+    margin-bottom: 100vh;
 }
 
 .content .image2 {
     position: relative;
-    width: 600px;
-    height: 500px;
+    width: 40vw;
+    height: 80vh;
     overflow: hidden;
+    margin-left: 55vw;
+    margin-top: 10vh;
 }
 
 .content .image2 img {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    top: 0vw;
+    left: 0vw;
+    width: 40vw;
+    height: 65%;
     object-fit: cover;
     border-radius: 10px;
     z-index: 10;
 }
 
-/* .frame {
-    position: relative;
-
-}
-
-.frame.active {
-    position: relative;
-    right: 300px;
-} */
-
-
-.header {
-    position: fixed;  
-    top: 0;
-    left: 45vw;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 40px 400px;
-    z-index: 1000;
-}
-
-.menu {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 300px;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: -1;
-}
-
-.toggle {
-    background: url("./images/menu.png");
-    width: 60px;
-    height: 60px;
-    background-size: 30px;
-    background-position: center;
-    background-repeat: no-repeat;
-    cursor: pointer;
-}
-
-.toggle.active {
-    background: url("./images/close.png");
-    width: 60px;
-    height: 60px;
-    background-size: 30px;
-    background-position: center;
-    background-repeat: no-repeat;
-    cursor: pointer;
+.footer {
+    color: #fff;
 }
 
 
@@ -246,13 +202,14 @@ section {
     position:fixed;
     z-index: 999;
     /*ナビのスタート位置と形状*/
-  top:0;
-    right: -120%;
-  width:100%;
-    height: 100vh;/*ナビの高さ*/
-  background:#999;
-    /*動き*/
-  transition: all 0.6s;
+    top:0;
+        right: -120%;
+    width:100%;
+        height: 100vh;/*ナビの高さ*/
+    background:rgb(12, 16, 14);
+        /*動き*/
+    transition: all 0.6s;
+    opacity: 0.95;
 }
 
 /*アクティブクラスがついたら位置を0に*/
@@ -289,7 +246,7 @@ section {
 }
 
 #g-nav li a{
-  color: #333;
+  color: rgb(155, 176, 21);
   text-decoration: none;
   padding:10px;
   display: block;
@@ -317,7 +274,7 @@ section {
     left: 14px;
     height: 3px;
     border-radius: 2px;
-  background-color: #666;
+  background-color: rgb(251, 251, 251);
     width: 45%;
   }
 
@@ -349,47 +306,4 @@ section {
     left: 18px;
     transform: translateY(-6px) rotate(45deg);
     width: 30%;
-}
-
-/*========= レイアウトのためのCSS ===============*/
-
-h1{
-  font-size:1.2rem;
-}
-
-h2{
-  font-size:1.2rem;
-  text-align: center;
-  margin: 0 0 30px 0;
-}
-
-p{
-  margin-top:20px;  
-}
-
-small{
-  color:#fff;
-  display: block;
-  text-align: center;
-}
-
-#header{
-  width:100%;
-  background:#333;
-  color:#fff;
-  text-align: center;
-  padding: 20px;
-}
-
-section{
-  padding:100px 30px;
-}
-
-section:nth-child(2n){
-  background:#f3f3f3; 
-}
-
-#footer{
-  background:#333;
-  padding:20px;
 }
