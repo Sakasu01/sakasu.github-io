@@ -1,4 +1,4 @@
-@mixin function include_header(site){
+@mixin function include(site){
     $.ajax({
         url: site+'.html', // リクエストを送信するURLを指定
         async: false, // 非同期リクエストを無効にする
