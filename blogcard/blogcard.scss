@@ -12,7 +12,7 @@
   transition: .2s ease-in-out;
 } 
 
-@media screen and (min-width: 720px) {
+@media screen and (max-width: 720px) {
   .blogcard {
     max-width: 100%;
     margin-bottom: 30px;
