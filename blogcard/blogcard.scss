@@ -3,7 +3,7 @@
   max-width: 100%;
   margin-bottom: 30px;
   margin-left: 5%;
-  margin-right: 5%;
+  margin-right: 50%;
   padding: 10px;
   border-radius: 2px;
   border: 1px solid rgb(211,211,211);
@@ -12,20 +12,20 @@
   transition: .2s ease-in-out;
 } 
 
-// @media screen and (min-width: 720px) {
-//   .blogcard {
-//     max-width: 100%;
-//     margin-bottom: 30px;
-//     margin-left: 5%;
-//     margin-right: 5%;
-//     padding: 10px;
-//     border-radius: 2px;
-//     border: 1px solid rgb(211,211,211);
-//     box-shadow: 0 10px 6px -6px rgba(0,0,0,.1);
-//     background: white;
-//     transition: .2s ease-in-out;
-//   }
-// }
+@media screen and (min-width: 720px) {
+  .blogcard {
+    max-width: 100%;
+    margin-bottom: 30px;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding: 10px;
+    border-radius: 2px;
+    border: 1px solid rgb(211,211,211);
+    box-shadow: 0 10px 6px -6px rgba(0,0,0,.1);
+    background: white;
+    transition: .2s ease-in-out;
+  }
+}
 
 .blogcard > a {
   color: rgb(51,51,51);
